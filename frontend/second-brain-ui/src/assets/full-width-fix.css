@@ -1,0 +1,112 @@
+/* Full-width layout fixes */
+
+/* Reset container max-width to ensure full screen utilization */
+:root {
+    --container-max-width: 100% !important;
+    --container-padding: 2rem;
+  }
+  
+  /* Ensure the app container takes full width */
+  .app-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Make header span full width */
+  .app-header {
+    width: 100%;
+    max-width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+  
+  .app-header .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* Ensure main content area uses full width */
+  .app-main {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .app-main .container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+  
+  /* Home view specific fixes */
+  .home-view {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .hero-section {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .features-section {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .features-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .cta-section {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Chat view specific fixes */
+  .chat-view {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .chat-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Add view specific fixes */
+  .add-view {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .add-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Add proper padding to maintain readability on very wide screens */
+  @media (min-width: 1600px) {
+    .app-main .container {
+      padding-left: calc(var(--container-padding) * 2);
+      padding-right: calc(var(--container-padding) * 2);
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+    
+    .hero-section,
+    .features-section,
+    .cta-section,
+    .chat-container,
+    .add-container {
+      max-width: 1800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
