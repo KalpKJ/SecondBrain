@@ -221,7 +221,7 @@ export default {
       return text.substring(0, maxLength) + '...';
     };
 
-    return {
+    return { 
       title,
       content,
       tagInput,
